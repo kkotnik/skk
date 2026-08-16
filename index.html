@@ -109,32 +109,38 @@
     </a>
   </div>
   <a class="nav-cta" href="#vpis">Prijava na trening</a>
-  <button class="nav-toggle" aria-label="Odpri meni"><span></span><span></span><span></span></button>
+  <button class="nav-toggle" type="button" aria-label="Odpri meni" aria-expanded="false"><span></span><span></span><span></span></button>
 </header>
 
 <main id="top">
 
   <section class="hero">
-    <div class="hero-panel hero-panel--main">
-      <img class="hero-photo" src="media/sabljac-na-stezi.jpg" alt="Sabljač na mednarodnem tekmovanju" width="2048" height="1152" fetchpriority="high">
-      <div class="hero-copy">
-        <p class="tag">Sezona 2026/27</p>
-        <h1>Sabljaški klub Kamnik</h1>
-        <p class="hero-lead">Vsak boj se začne s prvim korakom naprej.</p>
-        <p class="hero-sub">Sabljaški klub Kamnik je športni klub, namenjen učenju in treningu sabljanja v Kamniku. Klub za začetnike, rekreativce in tekmovalce — vadimo skozi vso sezono.</p>
-        <div class="hero-actions">
-          <a class="btn btn--primary" href="#vpis">Pridruži se klubu</a>
-          <a class="btn btn--ghost" href="#treningi">Poglej treninge</a>
+    <div class="hero-track">
+      <div class="hero-panel hero-panel--main">
+        <img class="hero-photo" src="media/sabljac-na-stezi.jpg" alt="Sabljač na mednarodnem tekmovanju" width="2048" height="1152" fetchpriority="high">
+        <div class="hero-copy">
+          <p class="tag">Sezona 2026/27</p>
+          <h1>Sabljaški klub Kamnik</h1>
+          <p class="hero-lead">Vsak boj se začne s prvim korakom naprej.</p>
+          <p class="hero-sub">Sabljaški klub Kamnik je športni klub, namenjen učenju in treningu sabljanja v Kamniku. Klub za začetnike, rekreativce in tekmovalce — vadimo skozi vso sezono.</p>
+          <div class="hero-actions">
+            <a class="btn btn--primary" href="#vpis">Pridruži se klubu</a>
+            <a class="btn btn--ghost" href="#treningi">Poglej treninge</a>
+          </div>
+        </div>
+      </div>
+      <div class="hero-panel hero-panel--side">
+        <img class="hero-photo" src="media/trening.jpg" alt="Dva sabljača na treningu v Kamniku" width="1536" height="2048" loading="lazy">
+        <div class="hero-side-copy">
+          <p class="tag">Za popolne začetnike</p>
+          <h2>Nikoli prej nisi imel/a sablje v roki?</h2>
+          <a class="btn btn--dark" href="#treningi">Kako začeti →</a>
         </div>
       </div>
     </div>
-    <div class="hero-panel hero-panel--side">
-      <img class="hero-photo" src="media/trening.jpg" alt="Dva sabljača na treningu v Kamniku" width="1536" height="2048" loading="lazy">
-      <div class="hero-side-copy">
-        <p class="tag">Za popolne začetnike</p>
-        <h2>Nikoli prej nisi imel/a sablje v roki?</h2>
-        <a class="btn btn--dark" href="#treningi">Kako začeti →</a>
-      </div>
+    <div class="hero-dots">
+      <button type="button" class="is-active" aria-label="Prvi zaslon"></button>
+      <button type="button" aria-label="Drugi zaslon"></button>
     </div>
   </section>
 
@@ -176,17 +182,24 @@
   </section>
 
   <section class="trust-strip" id="oprema">
-    <div>
-      <h3>Izkušeni trenerji</h3>
-      <p>Vodeni treningi za vsako raven, od prvega koraka do tekmovanj.</p>
+    <div class="trust-track">
+      <div>
+        <h3>Izkušeni trenerji</h3>
+        <p>Vodeni treningi za vsako raven, od prvega koraka do tekmovanj.</p>
+      </div>
+      <div>
+        <h3>Oprema na voljo</h3>
+        <p>Za prve treninge ni treba imeti lastne opreme — na voljo je klubska.</p>
+      </div>
+      <div>
+        <h3>Odprta vadba</h3>
+        <p>Novi člani so dobrodošli skozi vso sezono, ne le jeseni.</p>
+      </div>
     </div>
-    <div>
-      <h3>Oprema na voljo</h3>
-      <p>Za prve treninge ni treba imeti lastne opreme — na voljo je klubska.</p>
-    </div>
-    <div>
-      <h3>Odprta vadba</h3>
-      <p>Novi člani so dobrodošli skozi vso sezono, ne le jeseni.</p>
+    <div class="trust-dots">
+      <button type="button" class="is-active" aria-label="Prva kartica"></button>
+      <button type="button" aria-label="Druga kartica"></button>
+      <button type="button" aria-label="Tretja kartica"></button>
     </div>
   </section>
 
@@ -298,10 +311,24 @@
           <span class="join-step-num">01</span>
           <p>Pokliči ali napiši</p>
         </div>
+        <svg class="join-mec" viewBox="0 0 84 16" aria-hidden="true">
+          <circle cx="4" cy="8" r="2.5" fill="currentColor"/>
+          <rect x="6.2" y="5.7" width="11" height="4.6" rx="1.1" fill="currentColor"/>
+          <path d="M7 10.2c.4 4.2 9.6 5 13.4 1.1" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+          <ellipse cx="22.5" cy="8" rx="4.4" ry="6.2" fill="currentColor"/>
+          <path d="M26.8 7.15 L80 5.7 L83.2 8 L80 8.85 L26.8 8.85 Z" fill="currentColor"/>
+        </svg>
         <div class="join-step">
           <span class="join-step-num">02</span>
           <p>Pridi na prvi trening</p>
         </div>
+        <svg class="join-mec" viewBox="0 0 84 16" aria-hidden="true">
+          <circle cx="4" cy="8" r="2.5" fill="currentColor"/>
+          <rect x="6.2" y="5.7" width="11" height="4.6" rx="1.1" fill="currentColor"/>
+          <path d="M7 10.2c.4 4.2 9.6 5 13.4 1.1" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+          <ellipse cx="22.5" cy="8" rx="4.4" ry="6.2" fill="currentColor"/>
+          <path d="M26.8 7.15 L80 5.7 L83.2 8 L80 8.85 L26.8 8.85 Z" fill="currentColor"/>
+        </svg>
         <div class="join-step">
           <span class="join-step-num">03</span>
           <p>Postani član kluba</p>
