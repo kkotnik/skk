@@ -417,11 +417,9 @@ button{font-family:inherit;}
   grid-template-columns:1.2fr 1fr;
   min-height:440px;
   background:var(--surface);
-  border-top:1px solid var(--line);
-  border-bottom:1px solid var(--line);
   overflow:visible;
   position:relative;
-  z-index:1;
+  z-index:3;
 }
 .feature-banner .ph-img{min-height:100%;}
 .zoom-frame{
@@ -439,8 +437,13 @@ button{font-family:inherit;}
 .feature-banner .zoom-frame:hover{
   transform:scale(1.03);
 }
-.feature-banner .zoom-frame{min-height:440px;}
+.feature-banner .zoom-frame{
+  min-height:440px;
+  align-self:stretch;
+  line-height:0;
+}
 .feature-photo{
+  display:block;
   width:100%;
   height:100%;
   min-height:440px;
