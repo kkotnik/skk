@@ -165,15 +165,15 @@ button{font-family:inherit;}
   height:28px;
   opacity:0.75;
   transition:opacity .2s ease, transform .2s ease;
+  background-size:22px 22px;
+  background-position:center;
+  background-repeat:no-repeat;
 }
+.nav-social-fb{background-image:url("../media/fb-fav.png");}
+.nav-social-ig{background-image:url("../media/ig-fav.png");}
 .nav-social a:hover{
   opacity:1;
   transform:translateY(-1px);
-}
-.nav-social img{
-  width:22px;
-  height:22px;
-  object-fit:contain;
 }
 .nav-cta{
   font-family:var(--font-mono);
@@ -900,10 +900,7 @@ button{font-family:inherit;}
   .nav-social a{
     width:26px;
     height:26px;
-  }
-  .nav-social img{
-    width:20px;
-    height:20px;
+    background-size:20px 20px;
   }
   .nav-cta{
     margin-left:0;
